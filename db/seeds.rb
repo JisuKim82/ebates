@@ -10,6 +10,8 @@
 # require 'nokogiri'
 require 'open-uri'
 
+Store.destroy_all
+
 url = "http://www.ebates.com/stores/all/index.htm"
 doc = Nokogiri::HTML(open(url))
 puts doc.at_css("title").text
