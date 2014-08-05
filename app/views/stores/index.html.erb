@@ -1,6 +1,24 @@
-<h1>Stores with Cash Back!</h1>
+<h1>How does it work?</h1>
+  <p>Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you.
+  </p>
+<h2>Example</h2>
+  <p>
+    Macy's gives Ebates 2% of every sale that gets referred. If Ebates sends a customer that makes $500 worth of purchases at Macy's then Ebates will make $10 on that sale. Ebates than takes that $10 and they split the profit by giving you $5. This results in a 1% cash back rate.
+  </p>
+
+ <h2>Limited Time Promotion</h2>
+<p>When you <%= link_to "sign up", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471" %>, get a $10 Gift Card Bonus after you make your first purchase over $25</p> 
+
+<h2>Participating Stores</h2>
+<form>
+  <input name="keyword" placeholder='Search Store..'></input>
+  <input type="submit" value="Search">
+</form>
+
+
 <ul>
   <% @stores.each do |store| %>
-    <li><%= store.name %> : <%= store.cash_back %></li>
+    <li><%= link_to "#{store.name}: #{store.cash_back}", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471" %></li>
   <% end %>
 </ul>
+

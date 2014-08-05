@@ -1,5 +1,5 @@
 class StoresController < ApplicationController
   def index
-    @stores = Store.all
+    @stores = Store.search(params[:keyword])
   end
 end

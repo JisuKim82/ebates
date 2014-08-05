@@ -1,7 +1,7 @@
 class Store < ActiveRecord::Base
   before_save :set_keywords
 
-  scope :search, ->(keyword){where('keywords LIKE ?', "%#{keyword.downcase}%")}
+  scope :search, ->(keyword){where('keywords LIKE ?', "%#{keyword.downcase}%") if keyword.present?}
 
   protected
     def set_keywords
