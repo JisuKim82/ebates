@@ -22,6 +22,12 @@ ul{
 .lead a:hover{
   color: #5D6DA3;
 }
+.gift-1 a{
+  color: rgba(98, 229, 120, 0.7);
+}
+.gift-1:hover a{
+  color: rgba(42,127,56,0.8);
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -39,6 +45,7 @@ ul{
   background-color: rgba(255, 83, 14, 1);
   color: #fff;
 }
+
 /*
  * Base structure
  */
@@ -78,7 +85,7 @@ body {
   padding: 30px;
 }
 .shadow-1{
-  color: #467339;
+  color: rgba(8,23,204,0.78);
 }
 .navbar-default{
   background-color: #333333;

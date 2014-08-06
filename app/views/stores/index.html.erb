@@ -16,29 +16,32 @@
                 <br>
               </div><!--inner-->
             </nav>
-            <div class="row">
-              <div class="col-lg-offset-9 col-lg-3">
-                <a href="#">Claim Your $10 Gift Card!</a>
+            <!-- <div class="row">
+              <div class="col-lg-offset-7 col-lg-5 gift-1">
+                 <a id="giftcards" data-toggle="tooltip" data-placement="top" title="LIMITED TIME OFFER - Simply sign-up and receive a gift card of your choice" href="#">Claim your $10 Gift Card</a>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="inner cover">
             <h1 class="cover-heading">How Does It Work?</h1>
-            <p class="lead">Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you. See <%= link_to 'example', "#", :id => 'example-btn' %>.
-            </p>
+            <p class="lead">Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you. See <%= link_to 'example', "#", :id => 'example-btn' %>.             
+            </p>               
             <div id='example'>
               <p class="well">
                 Macy's gives Ebates 2% of every sale that gets referred. If Ebates sends a customer that makes $500 worth of purchases at Macy's then Ebates will make $10 on that sale. Ebates then takes that $10 and splits the profit by giving you $5. This results in a 1% cash back rate.
               </p>
             </div>
-            <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471", class: "btn", id: "btn-cta" %>
+            <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471", class: "btn", id: "btn-cta" %><br>
+            <a id="giftcards" data-toggle="tooltip" data-placement="right" title="LIMITED TIME OFFER - Simply sign-up and receive a gift card of your choice" href="#">Claim your $10 Gift Card</a>
+
             <br><br><br>
+
             <div class="well">
               <h3 class="shadow-1">Participating Stores</h3>
                 <form class="form-inline" role="form">
                   <input name="keyword" class="form-control" placeholder='Search Store...'>
-                  <input type="submit" value="Search" class="btn btn-success">
+                  <input type="submit" value="Search" class="btn btn-info">
                   <button class="btn btn-succes" action="/" method="post" name="keyword" value="ALL!">Show All</button>
                 </form>
                 <br>
