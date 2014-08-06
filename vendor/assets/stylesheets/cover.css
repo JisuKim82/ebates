@@ -54,6 +54,8 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  background-image: url(/assets/bg.jpg);
+  background-size: 100%;
 }
 .site-wrapper, .site-wrapper-inner, .cover-container{
   color: #fff;
