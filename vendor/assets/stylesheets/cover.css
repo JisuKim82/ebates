@@ -6,17 +6,22 @@
 /* Links */
 
 a{
-  color: #42464B;
+  color: #5D6DA3;
   text-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
 a:focus,
 a:hover {
-  color: #000;
+  color: #384263;
 }
 ul{
-  text-decoration: none;
+  list-style-type: none;
 }
-
+.lead a{
+  color: #AABDFF;
+}
+.lead a:hover{
+  color: #5D6DA3;
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -66,9 +71,11 @@ body {
   padding: 30px;
 }
 .shadow-1{
-  color: #508C28;
+  color: #467339;
 }
-
+.navbar-default{
+  background-color: #333333;
+}
 /*
  * Header
  */
