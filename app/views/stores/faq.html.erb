@@ -1,108 +1,124 @@
-<div class="site-wrapper">
+<!--  <div class="site-wrapper">
 
     <div class="site-wrapper-inner">
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <!-- <nav class="navbar navbar-default" role="navigation"> -->
-              <div class="inner">              
-                <%= image_tag("ebate-logo.png", :alt => "ebate-logo", :class => "masthead-brand") %>
-                <ul class="nav masthead-nav">
-                  <li><%= link_to "Home", "/" %></li>
-                  <li class="active"><%= link_to "FAQ", "faq" %></li>
-                </ul>
-                <br>
-              </div><!--inner-->
-            <!-- </nav> -->
-          </div>
+          <div class="masthead clearfix"> -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                <div class="header">
+                  <nav class="navbar navbar-default" role="navigation">
+                    <div class="inner">              
+                      <%= image_tag("ebate-logo.png", :alt => "ebate-logo", :class => "masthead-brand") %>
+                      <ul class="nav masthead-nav">
+                        <li><%= link_to "Home", "/" %></li>
+                        <li class="active"><%= link_to "FAQ", "faq" %></li>
+                      </ul>
+                      <br>
+                    </div><!--inner-->
+                  </nav>
+                </div><!--header-->
+              </div><!--col-lg-offset-2 col-lg-8-->
+            </div><!--row-->
+
+
           <br><br><br>
 
-        <div class="inner cover">
-          <div class="panel-group" id="accordion">
+            <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                <div class="inner cover">
 
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    What is Ebates and how does it work?
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  <p>Ebates is the pioneer and leader of online cash back shopping. Ebates pays members cash back every time they shop online as well as provide them with the best coupons and deals online. Founded in 1998, Ebates Inc.'s websites have paid over $250 million in cash to its members. If you ever make a purchase online there is no reason for you not to get cash back!
-                  </p>
-                  <p>Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you.</p>
-                </div>
-              </div><!--collapseOne End-->
-            </div><!--panel end-->
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-info">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            What is Ebates and how does it work?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <p>Ebates is the pioneer and leader of online cash back shopping. Ebates pays members cash back every time they shop online as well as provide them with the best coupons and deals online. Founded in 1998, Ebates Inc.'s websites have paid over $250 million in cash to its members. If you ever make a purchase online there is no reason for you not to get cash back!
+                          </p>
+                          <p>Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you.</p>
+                        </div>
+                      </div><!--collapseOne End-->
+                    </div><!--panel end-->
 
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    How quickly does the cash back get credited to my account?
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>Most cash back is credited within 48 hours.</p>
-                </div>
-              </div>
-            </div>
+                    <div class="panel panel-info">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            How quickly does the cash back get credited to my account?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Most cash back is credited within 48 hours.</p>
+                        </div>
+                      </div>
+                    </div>
 
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                    When do I get paid?
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>Every 3 months Ebates will send you a cash back payment for purchases posted during the previous quater.</p>  
-                </div>
-              </div>
-            </div>
+                    <div class="panel panel-info">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            When do I get paid?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Every 3 months Ebates will send you a cash back payment for purchases posted during the previous quater.</p>  
+                        </div>
+                      </div>
+                    </div>
 
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                    How do I get paid?
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>Ebates offers several ways to receive payment and is constantly working on ways to pay you faster. Currently Ebates offers 3 ways to receive payment.</p>
+                    <div class="panel panel-info">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            How do I get paid?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Ebates offers several ways to receive payment and is constantly working on ways to pay you faster. Currently Ebates offers 3 ways to receive payment.</p>
 
-                  <p>1) Big Fat Check: We send a check directly to you - mailing fees are on us. You can change your personal settings (including your address) on the Account Settings page. Be sure your settings are updated before we send out a payment.</p>
+                          <p>1) Big Fat Check: We send a check directly to you - mailing fees are on us. You can change your personal settings (including your address) on the Account Settings page. Be sure your settings are updated before we send out a payment.</p>
 
-                  <p>2) PayPal: We deposit your payment in your PayPal account - sender's fees are on us. Just enter your full name and mailing address into your Account Settings page for verification purposes. Your PayPal account must also be verified. Click here for more information on verifying your PayPal account.</p>
+                          <p>2) PayPal: We deposit your payment in your PayPal account - sender's fees are on us. Just enter your full name and mailing address into your Account Settings page for verification purposes. Your PayPal account must also be verified. Click here for more information on verifying your PayPal account.</p>
 
-                  <p>3) Charity/Organization/Family Member: If you think cash back is all gravy, why not send it to your favorite charity, organization or family member? It's free and mailing fees are on us. Go to Big Fat Payment Settings to send your cash back to a charity, organization or family member.</p>  
-                </div>
-              </div>
-            </div>
+                          <p>3) Charity/Organization/Family Member: If you think cash back is all gravy, why not send it to your favorite charity, organization or family member? It's free and mailing fees are on us. Go to Big Fat Payment Settings to send your cash back to a charity, organization or family member.</p>  
+                        </div>
+                      </div>
+                    </div>
 
-          </div>
+                  </div>
 
-          <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471", class: "btn", id: "btn-cta" %>
-          </div>
+                  <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471", class: "btn", id: "btn-cta" %>
+                  </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cash Back Search Engine for Ebates &copy; 2014</p>
-            </div>
-          </div>            
+                  <div class="mastfoot">
+                    <div class="inner">
+                      <p>Cash Back Search Engine for Ebates &copy; 2014</p>
+                    </div>
+                  </div>
+                </div><!--inner cover-->
+              </div><!--col-lg-offset-2 col-lg-8-->
+            </div><!--row-->
+
+          </div><!--container-->            
 
         
-        </div><!--cover-container-->
+        <!-- </div>cover-container -->
 
-    </div><!--site-wrapper-inner-->
+    <!-- </div>site-wrapper-inner -->
 
-</div><!--site-wrapper-->
+<!-- </div>site-wrapper -->

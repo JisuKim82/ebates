@@ -16,6 +16,9 @@ a:hover {
 ul{
   list-style-type: none;
 }
+h1, .lead{
+  color: #fff;
+}
 .lead a{
   color: #AABDFF;
 }
@@ -58,6 +61,7 @@ body {
   background-size: auto auto;
   background-repeat: no-repeat;
   opacity: 0.95;
+  text-align: center;
 }
 .site-wrapper, .site-wrapper-inner, .cover-container{
   color: #fff;
