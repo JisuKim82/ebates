@@ -31,7 +31,14 @@ ul{
   background-color: #fff;
   border: 1px solid #fff;
 }
-
+#btn-cta{
+  background-color: rgba(255, 100,35,1);
+  color: #fff;
+}
+#btn-cta:hover, .btn-cta:focus{
+  background-color: rgba(255, 83, 14, 1);
+  color: #fff;
+}
 /*
  * Base structure
  */
@@ -75,6 +82,7 @@ body {
 }
 .navbar-default{
   background-color: #333333;
+  border-color: transparent;
 }
 /*
  * Header
@@ -182,4 +190,7 @@ body {
 #example {
   display: none;
   color: black;
+}
+#example p{
+  font-size: 1.2em;
 }
