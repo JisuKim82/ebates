@@ -4,18 +4,18 @@
 
         <div class="cover-container">
           
-          <!-- <div class="masthead clearfix"> -->
+          <div class="masthead clearfix"> 
             <nav class="navbar navbar-default" role="navigation">
               <div class="inner">              
                 <!-- <img class="masthead-brand" src="/images/ebate-logo.png" alt="ebate-logo"> -->
                 <%= image_tag("ebate-logo.png", :alt => "ebate-logo", :class => "masthead-brand") %>
                 <ul class="nav masthead-nav">
-                  <li class="active"><%= link_to "About The Site", "/" %></li>
+                  <li class="active"><%= link_to "Home", "/" %></li>
                   <li><%= link_to "FAQ", "faq" %></li>
                 </ul>              
               </div>
             </nav>
-          <!-- </div> -->
+          </div>
 
           <div class="inner cover">
             <h1 class="cover-heading">How Does It Work?</h1>
@@ -26,8 +26,8 @@
                 Macy's gives Ebates 2% of every sale that gets referred. If Ebates sends a customer that makes $500 worth of purchases at Macy's then Ebates will make $10 on that sale. Ebates then takes that $10 and splits the profit by giving you $5. This results in a 1% cash back rate.
               </p>
             </div>
-            <button type="button" class="btn" id="btn-cta">Sign Up Now</button>
-            <br></br>
+            <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471", class: "btn", id: "btn-cta" %>
+            <br><br><br>
             <div class="well">
               <h3 class="shadow-1">Participating Stores</h3>
                 <form class="form-inline" role="form">
@@ -46,7 +46,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cash Back Search Engine<a href="http://getbootstrap.com">Ebates</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Cash Back Search Engine for Ebates &copy; 2014</p>
             </div>
           </div>
             
