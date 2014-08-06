@@ -207,3 +207,7 @@ body {
 #example p{
   font-size: 1.2em;
 }
+#store-list{
+  overflow: scroll;
+  height: 250px;
+}

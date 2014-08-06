@@ -46,7 +46,7 @@
                   <button class="btn btn-succes" action="/" method="post" name="keyword" value="ALL!">Show All</button>
                 </form>
                 <br>
-                <ul>
+                <ul id="store-list">
                   <% @stores.each do |store| %>
                     <li><%= link_to "#{store.name}: #{store.cash_back}", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471" %></li>
                   <% end %>
