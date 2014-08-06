@@ -171,3 +171,7 @@ body {
     width: 700px;
   }
 }
+
+#example {
+  display: none;
+}
