@@ -11,6 +11,10 @@ $(document).ready(function(){
     event.preventDefault();
 	  event.stopPropagation();
 	  $(this).tooltip();
+
+   $('.collapse').collapse()
+   $('.collapse.in').collapse()
+   $('.collapsing').collapse()
   });
 }); 
 
