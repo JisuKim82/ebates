@@ -1,4 +1,41 @@
-<h1>How does it work?</h1>
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <!-- <img class="masthead-brand" src="/images/ebate-logo.png" alt="ebate-logo"> -->
+              <%= image_tag("ebate-logo.png", :alt => "ebate-logo", :class => "masthead-brand") %>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">About Ebates</a></li>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">Limited Time Promotion</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">How Does It Work?</h1>
+            <p class="lead">Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you. See <%= link_to 'example', "#" %>.</p>
+            <div class="well">
+              <h3 class="shadow-1">Participating Stores</h3>
+                <form class="form-inline" role="form">
+                  <input name="keyword" class="form-control" placeholder='Search Store...'></input>
+                  <button type="button" class="btn btn-success">Search</button>
+                </form>
+                <br>
+                <ul>
+                  <% @stores.each do |store| %>
+                    <li><%= link_to "#{store.name}: #{store.cash_back}", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471" %></li>
+                  <% end %>
+                </ul>
+            </div>
+          </div>
+            
+
+<!-- <h1>How does it work?</h1>
   <p>Ebates is an affiliate company. Retailers will pay affiliates money to send traffic to their websites. Ebates takes that commission and splits it with you.
   </p>
 <h2>Example</h2>
@@ -8,17 +45,17 @@
 
  <h2>Limited Time Promotion</h2>
 <p>When you <%= link_to "sign up", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471" %>, get a $10 Gift Card Bonus after you make your first purchase over $25</p> 
-
-<h2>Participating Stores</h2>
-<form>
-  <input name="keyword" placeholder='Search Store..'></input>
-  <input type="submit" value="Search">
-</form>
+ -->
 
 
-<ul>
-  <% @stores.each do |store| %>
-    <li><%= link_to "#{store.name}: #{store.cash_back}", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=26471" %></li>
-  <% end %>
-</ul>
+
+
+
+
+
+        </div><!--site-wrapper-->
+
+    </div><!--site-wrapper-inner-->
+
+</div><!--cover-container-->
 
