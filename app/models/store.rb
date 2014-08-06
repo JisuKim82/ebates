@@ -2,12 +2,10 @@ class Store < ActiveRecord::Base
   before_save :set_keywords
 
   scope :search, ->(keyword){
-    if keyword == "ALL!"
-      all
-    elsif keyword.present?
+    if keyword.present?
       where('keywords LIKE ?', "%#{keyword.downcase}%")
     else
-      []
+      all
     end 
   }
 
