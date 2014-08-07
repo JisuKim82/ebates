@@ -1,4 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:600);
+@-ms-viewport       { width: device-width; }
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
 /*
  * Globals
  */
@@ -16,8 +22,15 @@ a:hover {
 ul{
   list-style-type: none;
 }
-h1, .lead{
+h1, .lead, .mastfoot2{
   color: #fff;
+}
+.mastfoot2{
+  text-shadow: 0 2px 3px rgba(0,0,0,1);
+}
+.slogan p{
+  color: #F2F2F2; /* IE8 proofing */
+  color: rgba(242,242,242,0.9);
 }
 .lead a{
   color: #AABDFF;
@@ -48,7 +61,14 @@ h1, .lead{
   background-color: rgba(255, 83, 14, 1);
   color: #fff;
 }
-
+#giftcards{
+  color: rgba(101,242,97,0.85);
+  text-shadow: 0 2px 3px rgba(0,0,0,1);
+}
+#giftcards:hover, #giftcards:focus{
+  color: rgba(75,178,71,0.7);
+  text-shadow: 0 2px 3px rgba(0,0,0,1);
+}
 /*
  * Base structure
  */
@@ -63,7 +83,7 @@ body {
   opacity: 0.95;
   text-align: center;
 }
-.site-wrapper, .site-wrapper-inner, .cover-container{
+.site-wrapper, .site-wrapper-inner, .cover-container, .container{
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.3);
