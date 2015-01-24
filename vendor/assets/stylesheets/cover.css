@@ -73,17 +73,15 @@ h1, .lead, .mastfoot2{
  * Base structure
  */
 
-body{
+html,
+body {
+  height: 100%;
   background-color: #333;
   background-image: url('bg.jpg');
   background-size: auto auto;
   background-repeat: no-repeat;
   opacity: 0.95;
   text-align: center;
-}
-
-body.faq{
-  height: 100%;
 }
 .site-wrapper, .site-wrapper-inner, .cover-container, .container{
   color: #fff;
@@ -236,8 +234,4 @@ body.faq{
 #store-list{
   overflow: scroll;
   height: 150px;
-}
-
-iframe, object, embed {
-  max-width: 100%;
 }
