@@ -1,3 +1,32 @@
 // Place all the styles related to the stores controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.panel-body strong {
+  color: red;
+  text-transform: uppercase;
+}
+
+.inner {
+  .signup{ margin-bottom: 50px;}
+}
+
+.seenontv {
+  display: block;
+  margin: 30px auto;
+}
+
+.shadow-1 { margin-top: 0;}
+
+#store-list { background: #fff;}
+
+//have scrollbar for list of stores show always
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
