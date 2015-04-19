@@ -75,10 +75,10 @@ h1, .lead, .mastfoot2{
 
 html,
 body {
-  height: 1050px;
+  /*height: 1050px;*/
   background-color: #333;
   background-image: url('bg.jpg');
-  background-size: auto auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 0.95;
   text-align: center;

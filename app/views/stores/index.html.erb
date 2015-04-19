@@ -40,7 +40,12 @@
                     </p>
                   </div>
                   <a id="giftcards" data-toggle="tooltip" data-placement="right" title="LIMITED TIME OFFER - Simply sign-up and receive a gift card of your choice" href="#">Claim your $10 Gift Card</a><br><br>
-                  <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=haURiTJy4JIHaPZVgIL7bQ%3D%3D&eeid=26471", class: "btn signup", id: "btn-cta" %>
+                  <%= link_to "Sign Up Now", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=28187", class: "btn signup", id: "btn-cta" %>
+
+                  <h5>In the news:</h5>
+                  <div>
+                    <iframe class="seenontv" style="visiblity:hidden;" onload="this.style.visibility = 'visible';" width="325" height="250" src="//www.youtube.com/embed/JqfwJMLGyOo?iv_load_policy=3&showinfo=0" frameborder="0" wmode="Opaque"></iframe>
+                  </div>
 
                   <div class="well">
                     <h3 class="shadow-1">Participating Stores</h3>
@@ -52,7 +57,7 @@
                       <br>
                       <ul id="store-list">
                         <% @stores.each do |store| %>
-                          <li><%= link_to "#{store.name}: #{store.cash_back}", "http://www.ebates.com/rf.do?referrerid=haURiTJy4JIHaPZVgIL7bQ%3D%3D&eeid=26471" %></li>
+                          <li><%= link_to "#{store.name}: #{store.cash_back}", "http://www.ebates.com/rf.do?referrerid=RfwSC5%2Fo28dJapxMLOKAgQ%3D%3D&eeid=28187" %></li>
                         <% end %>
                       </ul>
                   </div><!--well-->
